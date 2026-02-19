@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.DTOs;
 using WebApi.Services;
+using WebApi.Helpers;
 
 namespace WebApi.Controllers
 {
@@ -18,16 +20,6 @@ namespace WebApi.Controllers
         [HttpGet]
         public async Task<ActionResult<PagedResponse<StocksDto>>> GetStocks([FromQuery] FiltersDto filtersDto)
         {
-            // Use InputSanitizer for modularized input splitting
-            var (minBudget, maxBudget) = WebApi.Helpers.InputSanitizer.ParseBudget(filtersDto.Budget);
-            if (minBudget.HasValue) minBudget *= 100000;
-            if (maxBudget.HasValue) maxBudget *= 100000;
-
-            var cars = WebApi.Helpers.InputSanitizer.ParseIntList(filtersDto.Cars);
-            var cities = WebApi.Helpers.InputSanitizer.ParseIntList(filtersDto.Cities);
-            var fuels = WebApi.Helpers.InputSanitizer.ParseIntList(filtersDto.Fuel);
-
-            // Pass sanitized values to service or mapper as needed
             var (stocks, totalCount) = await _stocksService.GetStocksAsync(filtersDto);
 
             var response = new PagedResponse<StocksDto>
@@ -37,7 +29,9 @@ namespace WebApi.Controllers
                 TotalCount = totalCount
             };
 
-            return Ok(response); // Returns 200 OK with the JSON structure above
+            response.NextPageUrl = response.GenerateNextPageUrl(Request);
+
+            return Ok(response);
         }
 
         [HttpGet("cities")]

@@ -2,6 +2,7 @@ using Stocks;
 using WebApi.Mappers;
 using WebApi.Repositories;
 using WebApi.Services;
+using WebApi.Middleware;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddGrpcClient<StockService.StockServiceClient>(options =>
 {
@@ -53,5 +54,6 @@ app.UseHttpsRedirection();
 app.UseCors("_myAllowSpecificOrigins");
 app.UseAuthorization();
 app.MapControllers();
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.Run();

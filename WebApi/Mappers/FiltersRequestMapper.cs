@@ -8,5 +8,4 @@ namespace WebApi.Mappers;
 public partial class FiltersRequestMapper
 {
     public partial FiltersRequest ToGrpc(Filters entity);
-    public partial Filters FromGrpc(FiltersRequest request);
 }

@@ -1,0 +1,63 @@
+syntax = "proto3";
+
+package stocks;
+import "google/protobuf/empty.proto";
+
+// Service for retrieving stock information based on filter criteria.
+service StockService {
+  // Retrieves a list of stocks based on the provided filter criteria.
+  rpc GetStocks (FiltersRequest) returns (StocksResponse);
+  // Retrieves a list of cities available in the stock database.
+  rpc GetCities (google.protobuf.Empty) returns (CityResponse);
+  // Retrieves a list of car makes available in the stock database.
+  rpc GetMakes (google.protobuf.Empty) returns (MakeResponse);
+}
+
+message FiltersRequest {
+  optional int32 min_budget = 1;
+  optional int32 max_budget = 2;
+  string sort_by = 3; // default handled in backend ("default")
+
+  repeated int32 cars = 4;
+  repeated string fuel_type = 5;
+  repeated int32 cities = 6;
+
+  optional int32 page = 7;
+}
+
+message Stock {
+  string profile_id = 1;
+  string model_name = 2;
+  int32 price = 3;
+  string emi_text = 4;
+  string fuel = 5;
+  int32 kms_driven = 6;
+  string city_name = 7;
+  int32 make_year = 8;
+  repeated string image_urls = 9;
+  string make_name = 10;
+}
+
+message StocksResponse {
+  repeated Stock stocks = 1;
+  int32 total_count = 2;
+}
+
+message CityItem {
+  int32 city_id = 1;
+  string city_name = 2;
+  bool is_popular = 3;
+}
+
+message CityResponse {
+  repeated CityItem cities = 1;
+}
+
+message MakeItem {
+  int32 make_id = 1;
+  string make_name = 2;
+}
+
+message MakeResponse {
+  repeated MakeItem makes = 1;
+}

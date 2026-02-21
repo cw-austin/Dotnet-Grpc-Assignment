@@ -1,0 +1,480 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\Tests\\GrpcService.Tests\\GrpcService.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\Contracts\\Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\Contracts\\Contracts.csproj",
+        "projectName": "Contracts",
+        "projectPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\Contracts\\Contracts.csproj",
+        "packagesPath": "C:\\Users\\austin.d\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\austin.d\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.33.5, )"
+            },
+            "Grpc.Core": {
+              "target": "Package",
+              "version": "[2.46.6, )"
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.76.0, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.78.0, )"
+            },
+            "Riok.Mapperly": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.BAL\\GrpcService.BAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.BAL\\GrpcService.BAL.csproj",
+        "projectName": "GrpcService.BAL",
+        "projectPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.BAL\\GrpcService.BAL.csproj",
+        "packagesPath": "C:\\Users\\austin.d\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.BAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\austin.d\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\Contracts\\Contracts.csproj"
+              },
+              "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.DAL\\GrpcService.DAL.csproj": {
+                "projectPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.DAL\\GrpcService.DAL.csproj"
+              },
+              "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.Domain\\GrpcService.Domain.csproj": {
+                "projectPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.Domain\\GrpcService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Riok.Mapperly": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.csproj",
+        "projectName": "GrpcService",
+        "projectPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.csproj",
+        "packagesPath": "C:\\Users\\austin.d\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\austin.d\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\Contracts\\Contracts.csproj"
+              },
+              "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.BAL\\GrpcService.BAL.csproj": {
+                "projectPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.BAL\\GrpcService.BAL.csproj"
+              },
+              "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.DAL\\GrpcService.DAL.csproj": {
+                "projectPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.DAL\\GrpcService.DAL.csproj"
+              },
+              "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.Domain\\GrpcService.Domain.csproj": {
+                "projectPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.Domain\\GrpcService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.76.0, )"
+            },
+            "Riok.Mapperly": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.DAL\\GrpcService.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.DAL\\GrpcService.DAL.csproj",
+        "projectName": "GrpcService.DAL",
+        "projectPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.DAL\\GrpcService.DAL.csproj",
+        "packagesPath": "C:\\Users\\austin.d\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\austin.d\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\Contracts\\Contracts.csproj"
+              },
+              "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.Domain\\GrpcService.Domain.csproj": {
+                "projectPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.Domain\\GrpcService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.6.0, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.Domain\\GrpcService.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.Domain\\GrpcService.Domain.csproj",
+        "projectName": "GrpcService.Domain",
+        "projectPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.Domain\\GrpcService.Domain.csproj",
+        "packagesPath": "C:\\Users\\austin.d\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\austin.d\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\Tests\\GrpcService.Tests\\GrpcService.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\Tests\\GrpcService.Tests\\GrpcService.Tests.csproj",
+        "projectName": "GrpcService.Tests",
+        "projectPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\Tests\\GrpcService.Tests\\GrpcService.Tests.csproj",
+        "packagesPath": "C:\\Users\\austin.d\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\Tests\\GrpcService.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\austin.d\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\Contracts\\Contracts.csproj"
+              },
+              "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.csproj": {
+                "projectPath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\GrpcService\\GrpcService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Grpc.Core.Testing": {
+              "target": "Package",
+              "version": "[2.46.6, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

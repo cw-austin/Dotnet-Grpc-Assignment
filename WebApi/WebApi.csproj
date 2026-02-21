@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <DefaultItemExcludes>$(DefaultItemExcludes);WebApi.Domain\**;WebApi.BAL\**;WebApi.DAL\**</DefaultItemExcludes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,12 +20,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Contracts\Contracts.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Enums\" />
-    <Folder Include="Repositories\" />
+    <ProjectReference Include="..\WebApi.Services\WebApi.Services.csproj" />
+    <ProjectReference Include="..\WebApi.Repository\WebApi.Repository.csproj" />
+    <ProjectReference Include="..\WebApi.Domain\WebApi.Domain.csproj" />
   </ItemGroup>
 
 </Project>

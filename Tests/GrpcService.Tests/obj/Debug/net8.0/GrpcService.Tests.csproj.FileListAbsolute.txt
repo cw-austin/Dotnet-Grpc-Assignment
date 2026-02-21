@@ -1,0 +1,7 @@
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Tests\GrpcService.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_GrpcService.Tests
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Tests\GrpcService.Tests\obj\Debug\net8.0\GrpcService.Tests.csproj.AssemblyReference.cache
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Tests\GrpcService.Tests\obj\Debug\net8.0\GrpcService.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Tests\GrpcService.Tests\obj\Debug\net8.0\GrpcService.Tests.AssemblyInfoInputs.cache
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Tests\GrpcService.Tests\obj\Debug\net8.0\GrpcService.Tests.AssemblyInfo.cs
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Tests\GrpcService.Tests\obj\Debug\net8.0\GrpcService.Tests.csproj.CoreCompileInputs.cache
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Tests\GrpcService.Tests\obj\Debug\net8.0\GrpcService.Tests.sourcelink.json

@@ -1,0 +1,12 @@
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\GrpcService\GrpcService.Domain\bin\Debug\net8.0\GrpcService.Domain.deps.json
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\GrpcService\GrpcService.Domain\bin\Debug\net8.0\GrpcService.Domain.dll
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\GrpcService\GrpcService.Domain\bin\Debug\net8.0\GrpcService.Domain.pdb
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\GrpcService\GrpcService.Domain\obj\Debug\net8.0\GrpcService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\GrpcService\GrpcService.Domain\obj\Debug\net8.0\GrpcService.Domain.AssemblyInfoInputs.cache
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\GrpcService\GrpcService.Domain\obj\Debug\net8.0\GrpcService.Domain.AssemblyInfo.cs
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\GrpcService\GrpcService.Domain\obj\Debug\net8.0\GrpcService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\GrpcService\GrpcService.Domain\obj\Debug\net8.0\GrpcService.Domain.sourcelink.json
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\GrpcService\GrpcService.Domain\obj\Debug\net8.0\GrpcService.Domain.dll
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\GrpcService\GrpcService.Domain\obj\Debug\net8.0\refint\GrpcService.Domain.dll
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\GrpcService\GrpcService.Domain\obj\Debug\net8.0\GrpcService.Domain.pdb
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\GrpcService\GrpcService.Domain\obj\Debug\net8.0\ref\GrpcService.Domain.dll

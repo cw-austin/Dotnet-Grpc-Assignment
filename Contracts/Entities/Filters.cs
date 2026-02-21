@@ -15,5 +15,4 @@ public class Filters
     public List<FuelType>? FuelType { get; set; }
     public List<int>? Cities { get; set; }
     public int? Page { get; set; }
-
 }

@@ -3,13 +3,15 @@ syntax = "proto3";
 package stocks;
 import "google/protobuf/empty.proto";
 
-// Service for retrieving stock information based on filter criteria.
 service StockService {
-  // Retrieves a list of stocks based on the provided filter criteria.
   rpc GetStocks (FiltersRequest) returns (StocksResponse);
-  // Retrieves a list of cities available in the stock database.
+}
+
+service CitiesService {
   rpc GetCities (google.protobuf.Empty) returns (CityResponse);
-  // Retrieves a list of car makes available in the stock database.
+}
+
+service MakesService {
   rpc GetMakes (google.protobuf.Empty) returns (MakeResponse);
 }
 

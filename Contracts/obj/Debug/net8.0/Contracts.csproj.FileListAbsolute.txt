@@ -1,0 +1,16 @@
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Contracts\artifacts\webapi\Contracts.deps.json
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Contracts\artifacts\webapi\Contracts.dll
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Contracts\artifacts\webapi\Contracts.pdb
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Contracts\bin\Debug\net8.0\Contracts.deps.json
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Contracts\bin\Debug\net8.0\Contracts.dll
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Contracts\bin\Debug\net8.0\Contracts.pdb
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Contracts\obj\Debug\net8.0\Contracts.csproj.AssemblyReference.cache
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Contracts\obj\Debug\net8.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Contracts\obj\Debug\net8.0\Contracts.AssemblyInfoInputs.cache
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Contracts\obj\Debug\net8.0\Contracts.AssemblyInfo.cs
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Contracts\obj\Debug\net8.0\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Contracts\obj\Debug\net8.0\Contracts.sourcelink.json
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Contracts\obj\Debug\net8.0\Contracts.dll
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Contracts\obj\Debug\net8.0\refint\Contracts.dll
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Contracts\obj\Debug\net8.0\Contracts.pdb
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\Contracts\obj\Debug\net8.0\ref\Contracts.dll

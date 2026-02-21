@@ -1,0 +1,12 @@
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\WebApi.Domain\bin\Debug\net8.0\WebApi.Domain.deps.json
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\WebApi.Domain\bin\Debug\net8.0\WebApi.Domain.dll
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\WebApi.Domain\bin\Debug\net8.0\WebApi.Domain.pdb
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\WebApi.Domain\obj\Debug\net8.0\WebApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\WebApi.Domain\obj\Debug\net8.0\WebApi.Domain.AssemblyInfoInputs.cache
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\WebApi.Domain\obj\Debug\net8.0\WebApi.Domain.AssemblyInfo.cs
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\WebApi.Domain\obj\Debug\net8.0\WebApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\WebApi.Domain\obj\Debug\net8.0\WebApi.Domain.sourcelink.json
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\WebApi.Domain\obj\Debug\net8.0\WebApi.Domain.dll
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\WebApi.Domain\obj\Debug\net8.0\refint\WebApi.Domain.dll
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\WebApi.Domain\obj\Debug\net8.0\WebApi.Domain.pdb
+C:\Users\austin.d\Training\Intern\2026\AustinDmello\Assignment3\WebApi.Domain\obj\Debug\net8.0\ref\WebApi.Domain.dll

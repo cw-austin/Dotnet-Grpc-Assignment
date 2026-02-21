@@ -1,50 +1,59 @@
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using WebApi.DTOs;
 using WebApi.Services;
-using WebApi.Helpers;
+using WebApi.Domain.DTOs;
+using WebApi.Domain.Entities;
+using WebApi.Validators;
 
 namespace WebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/")]
     [ApiController]
     public class StocksController : ControllerBase
     {
         private readonly IStocksService _stocksService;
+        private readonly ICityService _cityService;
+        private readonly IMakeService _makeService;
 
-        public StocksController(IStocksService stocksService)
+        public StocksController(IStocksService stocksService, ICityService cityService, IMakeService makeService)
         {
             _stocksService = stocksService;
+            _cityService = cityService;
+            _makeService = makeService;
         }
 
-        [HttpGet]
+        [HttpGet("stocks")]
         public async Task<ActionResult<PagedResponse<StocksDto>>> GetStocks([FromQuery] FiltersDto filtersDto)
         {
-            var (stocks, totalCount) = await _stocksService.GetStocksAsync(filtersDto);
+            try{
+                var validationResults = FiltersDtoValidator.Validate(filtersDto).ToList();
+                if (validationResults.Count > 0)
+                {
+                    foreach (var validationResult in validationResults)
+                    {
+                        var memberName = validationResult.MemberNames.FirstOrDefault() ?? string.Empty;
+                        ModelState.AddModelError(memberName, validationResult.ErrorMessage ?? "Invalid filter value.");
+                    }
 
-            var response = new PagedResponse<StocksDto>
+                    return ValidationProblem(ModelState);
+                }
+
+                var (stocks, totalCount) = await _stocksService.GetStocksAsync(filtersDto);
+
+                var response = new PagedResponse<StocksDto>
+                {
+                    Stocks = stocks,
+                    Page = filtersDto.Page ?? 1,
+                    PageSize = 20,
+                    TotalCount = totalCount
+                };
+
+                return Ok(response); // Returns 200 OK with the JSON structure
+            }
+            catch(Exception ex)
             {
-                Stocks = stocks,
-                Page = filtersDto.Page ?? 1,
-                TotalCount = totalCount
-            };
-
-            response.NextPageUrl = response.GenerateNextPageUrl(Request);
-
-            return Ok(response);
-        }
-
-        [HttpGet("cities")]
-        public async Task<IActionResult> GetCities()
-        {
-            var cities = await _stocksService.GetCitiesAsync();
-            return Ok(cities);
-        }
-        [HttpGet("makes")]
-        public async Task<IActionResult> GetMakes()
-        {
-            var makes = await _stocksService.GetMakesAsync();
-            return Ok(makes);
+                Console.WriteLine($"Error in GetStocks: {ex}");
+                return StatusCode(500, "An error occurred while processing your request.");
+            }
         }
     }
 }

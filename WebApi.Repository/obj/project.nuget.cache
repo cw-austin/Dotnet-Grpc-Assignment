@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "3EsazX22OWw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\austin.d\\Training\\Intern\\2026\\AustinDmello\\Assignment3\\WebApi.Repository\\WebApi.Repository.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\austin.d\\.nuget\\packages\\google.protobuf\\3.33.5\\google.protobuf.3.33.5.nupkg.sha512",
+    "C:\\Users\\austin.d\\.nuget\\packages\\grpc.core\\2.46.6\\grpc.core.2.46.6.nupkg.sha512",
+    "C:\\Users\\austin.d\\.nuget\\packages\\grpc.core.api\\2.76.0\\grpc.core.api.2.76.0.nupkg.sha512",
+    "C:\\Users\\austin.d\\.nuget\\packages\\grpc.net.client\\2.76.0\\grpc.net.client.2.76.0.nupkg.sha512",
+    "C:\\Users\\austin.d\\.nuget\\packages\\grpc.net.common\\2.76.0\\grpc.net.common.2.76.0.nupkg.sha512",
+    "C:\\Users\\austin.d\\.nuget\\packages\\grpc.tools\\2.78.0\\grpc.tools.2.78.0.nupkg.sha512",
+    "C:\\Users\\austin.d\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\austin.d\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\austin.d\\.nuget\\packages\\riok.mapperly\\4.3.1\\riok.mapperly.4.3.1.nupkg.sha512",
+    "C:\\Users\\austin.d\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

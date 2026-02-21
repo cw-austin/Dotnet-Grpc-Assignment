@@ -1,49 +1,51 @@
+using WebApi.Repository.Repositories; // For StocksRepository, CityRepository, etc.
 using Stocks;
 using WebApi.Mappers;
-using WebApi.Repositories;
+using WebApi.WebApi.Repository.Repositories;
 using WebApi.Services;
-using WebApi.Middleware;
+
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddGrpcClient<StockService.StockServiceClient>(options =>
-{
-    options.Address = new Uri(
-        builder.Configuration["GrpcServer:Address"]!);
-});
+
+var grpcUrl = builder.Configuration["GrpcSettings:Url"] 
+              ?? throw new InvalidOperationException("gRPC URL 'GrpcSettings:Url' is missing in appsettings.json");
+
+builder.Services.AddGrpcClient<StockService.StockServiceClient>(o => o.Address = new Uri(grpcUrl));
+builder.Services.AddGrpcClient<CitiesService.CitiesServiceClient>(o => o.Address = new Uri(grpcUrl));
+builder.Services.AddGrpcClient<MakesService.MakesServiceClient>(o => o.Address = new Uri(grpcUrl));
+
 builder.Services.AddSingleton<StockRawDataMapper>();
 builder.Services.AddSingleton<StocksDtoMapper>();
 builder.Services.AddSingleton<FiltersMapper>();
 builder.Services.AddSingleton<MetadataMapper>();
 builder.Services.AddSingleton<FiltersRequestMapper>();
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddScoped<IStocksService, StocksService>();
 builder.Services.AddScoped<IStocksRepository, StocksRepository>();
-builder.Services.AddSwaggerGen();
-var myAllowSpecificOrigins = "_myAllowSpecificOrigins";
+builder.Services.AddScoped<ICityRepository, CityRepository>(); // Added
+builder.Services.AddScoped<IMakeRepository, MakeRepository>(); // Added
 
+builder.Services.AddScoped<IStocksService, StocksService>();
+builder.Services.AddScoped<ICityService, CityService>();
+builder.Services.AddScoped<IMakeService, MakeService>();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+builder.Services.AddControllers();
+
+var myAllowSpecificOrigins = "_myAllowSpecificOrigins";
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: myAllowSpecificOrigins,
         policy =>
         {
-            policy.WithOrigins("http://localhost:3000" // Your Frontend URL
-                                ) //"https://yourdomain.com" add more allowed domains if needed
+            policy.WithOrigins("http://localhost:3000") 
                 .AllowAnyHeader()
                 .AllowAnyMethod();
         });
 });
-builder.Services.AddControllers()
-    .ConfigureApiBehaviorOptions(options =>
-    {
-        // This ensures that model state errors return a 400 automatically
-        options.SuppressModelStateInvalidFilter = false;
-    });
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// --- 6. Middleware Pipeline ---
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -51,9 +53,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseCors("_myAllowSpecificOrigins");
+app.UseCors(myAllowSpecificOrigins);
 app.UseAuthorization();
 app.MapControllers();
-app.UseMiddleware<ExceptionMiddleware>();
 
 app.Run();
